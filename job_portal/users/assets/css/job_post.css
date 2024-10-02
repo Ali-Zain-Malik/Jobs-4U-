@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    background-color: rgb(233, 234, 217);
+}
+
+
+.main-container
+{
+    background-color: rgb(235, 235, 229);
+    margin-top: 60px;
+}
+
+
+.container-fluid
+{
+    background-color: rgba(238, 241, 197, 0.6);
+    border: 2px solid orange;
+}
+
+.container-fluid p
+{
+    color: orangered;
+}
+
+
+.job-title
+{
+    width: 400px;
+    height: 40px;
+    outline: none;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: 1px solid orange;
+}
+
+
+.label
+{
+    color: orange;
+}
+
+.salary-amount
+{
+    height: 35px;
+    padding-left: 8px;
+    border: 1px solid orange;
+    outline: none;
+}
+
+
+.start-date, .end-date
+{
+    border: 1px solid orange;
+    outline: none;
+}
+
+.description
+{
+    outline: none;
+    padding: 5px 8px;
+    border: 1px solid orange;
+    min-height: 100px;
+}
+
+
+.publish-btn
+{
+    padding: 5px 12px;
+    font-size: 14px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+
+.publish-btn:hover
+{
+    scale: 0.97;
+    background-color: rgb(238, 156, 5);
+}
+.footer-div
+{
+    background-color: rgb(235, 235, 229);
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width:540px)
+{
+    .job-title
+    {
+        width: 280px;
+    }    
+}
+
+
+@media screen and (max-width:380px)
+{
+    .job-title
+    {
+        width: 200px;
+    }    
+}

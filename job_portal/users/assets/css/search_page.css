@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(233, 234, 217);
+}
+
+
+
+.loader
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.228);
+}
+
+
+.search-div
+{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.search-box
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#search-input
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.location-div
+{
+    width: 40%;
+    height: 100%;
+    border: none;
+    /* border-left: 1px solid black; */
+    outline: none;
+    font-size: 16px;
+    /* padding-left: 5px; */
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.location-image
+{
+    /* width: 25%; */
+    display: flex;
+    align-items: center;
+}
+
+.location-icon
+{
+    object-fit: contain;
+    height: 30px;
+}
+
+#city-selector
+{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.search-image
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.search-icon
+{
+    width: 35%;
+}
+
+.search-image:hover
+{
+    background-color: rgb(232, 153, 5);
+}
+
+
+.featured-jobs-div
+{
+    width: 100%;
+    position: relative;
+    top: 60px;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-heading-div
+{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#feature-heading
+{
+    color: black;
+    font-size: 24px;
+}
+
+.featured-content
+{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: rgb(235, 235, 229);
+}
+
+.column1
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2
+{
+    width: 48%;
+    padding: 10px 10px;
+    background-color: rgba(244, 244, 226, 0.744);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.763);
+    transition: all 0.4s ease;
+}
+
+.card2:hover
+{
+    box-shadow: 0px 0px 2px black;
+    scale: 1.02;
+}
+
+.card2-heading
+{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card2-location
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.card2-location-icon
+{
+    width: 15px;
+}
+
+.job-type-div, .salary-div, .company-div, .employement-type-div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.company-name
+{
+    font-weight: bold;
+}
+
+
+.salary-span
+{
+    font-size: 14px;
+}
+
+
+.remaining-period-span
+{
+    font-size: 10px;
+}
+
+.view-btn, .apply-btn
+{
+    transition: all 0.4s ease;
+}
+
+
+.apply-btn:hover
+{
+    background-color: rgb(235, 154, 5);
+    scale: 0.95;
+}
+
+.view-btn:hover
+{
+    background-color: rgb(235, 154, 5);
+    scale: 0.95;
+}
+
+.view-others-div
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#view-other
+{
+    padding: 8px 15px;
+    border: none;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#view-other:hover
+{
+    scale: 0.95;
+    background-color: rgb(235, 154, 5);
+}
+
+.job-summary
+{
+    text-align: justify;
+}
+
+
+.view-apply-div2
+{
+    display: none;
+}
+
+.view-apply-div2 button
+{
+    font-size: 12px;
+    padding: 5px 12px;
+    border: none;
+    background-color: #37393A;
+    border-radius: 15px;
+    color: white;
+}
+
+
+/* Toast functionality*/
+.toast-toggle
+{
+    width: fit-content;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+}
+
+
+.footer-div
+{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 60px;
+    background-color: rgb(235, 235, 229);
+}
+
+
+
+@media screen and (max-width: 1100px)
+{
+    .column1
+    {
+        flex-direction: column;
+    }
+
+    .card2
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    /* .column1
+    {
+        width: 100%;
+    } */
+
+    /* .featured-jobs-div
+    {
+        padding: 15px 100px;
+    } */
+}
+
+
+@media screen and (max-width:650px)
+{
+    .search-div
+    {
+        height: 200px;
+    }    
+
+    .search-box
+    {
+        flex-direction: column;
+    }
+
+    #search-input
+    {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    .location-div
+    {
+        width: 70%;
+        border-left: 0;
+    }
+
+    .search-image
+    {
+        width: 100%;
+    }
+
+    .search-icon
+    {
+        width: 8%;
+    }
+}
+
+
+@media screen and (max-width:600px)
+{
+    .view-apply-div
+    {
+        display: none;
+    }
+
+    .view-apply-div2
+    {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:400px)
+{
+    .featured-jobs-div
+    {
+        padding: 15px 15px;
+    }   
+
+    .search-div
+    {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* <!-- Using styling here just to override the boostrap --> */
+
+    p
+    {
+        margin-bottom: 0;
+    }
+
+    h3
+    {
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+
+
+    
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active 
+    {
+        color: white;
+        background-color: orange;
+    }
+
+
+    .success-popup-close-btn:active
+    {
+        background-color: transparent;
+    }
+
+    .btn-close:focus
+    {
+        box-shadow: none;
+        scale: 0.8;
+    }
+
+    .form-control
+    {
+        font-size: 0.9rem;
+    }
+
+    .form-control:focus
+    {
+        box-shadow: none;
+        border-color: orange;
+    }
+
+
+    .apply-for-job-btn, .final-apply-btn
+    {
+        background-color: orange;
+        border: none;
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+
+    .apply-for-job-btn:hover, .final-apply-btn:hover
+    {
+        background-color: rgb(235, 154, 5);
+        scale: 0.95;
+    }

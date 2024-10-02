@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    background-color: rgb(233, 234, 217);
+}
+
+
+.hero-wrapper
+{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+}
+
+.hero-image
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.over
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 46, 50, 0.582);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag-div
+{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tag-div p
+{
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.search-div
+{
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#search-input
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.location-div
+{
+    width: 40%;
+    height: 100%;
+    border: none;
+    /* border-left: 1px solid black; */
+    outline: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.location-image
+{
+    display: flex;
+    align-items: center;
+}
+
+.location-icon
+{
+    object-fit: contain;
+    height: 30px;
+}
+
+#city-selector
+{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.search-image
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.search-icon
+{
+    width: 30%;
+}
+
+.search-image:hover
+{
+    background-color: rgb(232, 153, 5);
+}
+
+
+
+.categories-div
+{
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+
+.container2
+{
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 50px;
+}
+
+.categories-heading-div
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#categories-heading
+{
+    font-size: 24px;
+    color: black;
+}
+
+.heading span 
+{
+    color: #37393A;
+    font-size: 14px;
+}
+
+#all-categories
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: orange;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+#all-categories img
+{
+    width: 20px;
+}
+
+
+#all-categories:hover
+{
+    text-decoration: underline;
+}
+
+.cards-div
+{
+    width: 100%;
+    background-color: rgb(235, 235, 229);
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card
+{
+    width: 20%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: rgba(244, 244, 226, 0.744);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.763);
+    transition: all 0.4s ease;
+}
+
+.card-heading
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+.jobs-number
+{
+    color: #37393A;
+    font-size: 14px;
+}
+.row1
+{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.row2
+{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.explore-btn
+{
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    color: orange;
+}
+
+.explore-btn:hover
+{
+    text-decoration: underline;
+    color: orangered;
+}
+
+.featured-jobs-div
+{
+    width: 100%;
+    position: relative;
+    top: 60px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-jobs-outline
+{
+    padding: 15px 53px;
+    background-color: rgb(235, 235, 229);
+    width: 95%;
+    margin: auto;
+}
+
+.featured-heading-div
+{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#feature-heading
+{
+    color: black;
+    font-size: 24px;
+}
+
+.featured-content
+{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.column1, .column2
+{
+    width: 50%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card2
+{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(244, 244, 226, 0.744);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.763);
+    transition: all 0.4s ease;
+}
+
+.card2:hover
+{
+    box-shadow: 0px 0px 2px black;
+    scale: 1.02;
+}
+
+
+.card2-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2-heading
+{
+    color: black;
+    font-size: 18px;
+    text-align: left;
+}
+
+.date
+{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#posted-date
+{
+    font-weight: normal;
+}
+.card2-location
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.card2-location-icon
+{
+    width: 15px;
+}
+
+.job-type-div, .salary-div, .company-div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+
+.salary-span
+{
+    font-size: 14px;
+}
+
+
+.remaining-period-span
+{
+    font-size: 10px;
+}
+
+
+.top-employers
+{
+    margin-top:100px; 
+    margin-left: 30px; 
+    margin-right:30px; 
+    background-color: rgb(235, 235, 229);
+}
+
+
+.posts-number-div
+{
+    font-size: 12px;
+}
+
+.company-name
+{
+    font-weight: bold;
+}
+
+p
+{
+    color: #37393A;
+}
+
+.job-type
+{
+    padding: 5px 10px;
+    border: none;
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.apply-btn-div
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.apply-btn
+{
+    padding: 5px 20px;
+    border: none;
+    background-color: orange;
+    border-radius: 18px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.apply-btn:hover
+{
+    background-color: rgb(235, 154, 5);
+    scale: 0.95;
+}
+
+.apply-btn:active
+{
+    background-color: green;
+}
+
+
+.view-others-div
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#view-other
+{
+    padding: 8px 15px;
+    border: none;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#view-other:hover
+{
+    scale: 0.95;
+    background-color: rgb(235, 154, 5);
+}
+
+
+.reviews-div
+{
+    margin: 100px 30px; 
+    background-color: rgb(235, 235, 229);
+}
+
+
+.review-carousel
+{
+    box-shadow: 1px 1px 5px black; 
+    background-color: rgba(244, 244, 226, 0.744);
+}
+
+
+.review-card
+{
+    box-shadow: none;
+}
+
+
+.carousel-control-prev ,.carousel-control-next
+{
+    width: 6%;
+}
+
+
+.comments-div
+{
+    background-color: rgb(235, 235, 229); 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.comment-text
+{
+    outline: none;
+    width: 50%;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+
+.comment-btn
+{
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.toast-toggle
+{
+    width: fit-content;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+}
+
+.footer-div
+{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 60px;
+    background-color: rgb(235, 235, 229);
+}
+
+
+.cards
+{
+    width: 48%;
+}
+
+@media screen and (max-width: 993px)
+{
+    .featured-jobs
+    {
+        flex-direction: column;
+    }    
+    
+    .cards
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:880px)
+{
+    .title-heading
+    {
+        font-size: 20px;
+    }
+
+    .search-div
+    {
+        width: 60%;
+    }
+
+    .search-icon
+    {
+        width: 40%;
+    }
+
+    .row1
+    {
+        gap: 20px;
+    }
+
+    .cards-div
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card
+    {
+        width: 80%;
+    }
+
+    .card-heading
+    {
+        font-size: 20px;
+    }
+    /* .row2
+    {
+        display: none;
+    } */
+
+    .featured-jobs-outline
+    {
+        padding: 15px 30px;
+    }
+}
+
+
+@media screen and (max-width:832px)
+{
+    .action-buttons
+    {
+        display: none;
+    }
+
+    .div2
+    {
+        width: 5%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 120px;
+    }
+
+    .div3
+    {
+        width: 28%;;
+    }
+
+    .menu-icon
+    {
+        display: flex;
+        width: 22px;
+    }
+
+    .location-div
+    {
+        width: 35%;
+    }
+
+    #search-input
+    {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:710px)
+{
+    .div1
+    {
+        width: 20%;
+    }
+
+    .div2
+    {
+        left: 130px;
+    }
+
+    .drop-down
+    {
+        width: 18.5%;
+    }
+
+    .column2
+    {
+        display: none;
+    }
+
+    .column1
+    {
+        width: 100%;
+    }
+}
+
+
+@media screen  and (max-width:600px)
+{
+    .search-box
+    {
+        flex-direction: column;
+    }  
+    
+    .search-div
+    {
+        height: 40%;
+    }
+
+    #search-input
+    {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border-bottom: 1px solid black;
+    }
+
+    .location-div
+    {
+        width: 48%;
+        border: none;
+    }
+
+    .search-image
+    {
+        width: 100%;
+    }
+
+    .search-icon
+    {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 590px)
+{
+    .div1
+    {
+        width: 25%;
+    }
+
+    .div2
+    {
+        left: 150px;
+    }
+
+    .div3
+    {
+        width: 35%;
+    }
+
+    .menu-list
+    {
+        left: 72px;
+    }
+
+    .categories-heading-div
+    {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #all-categories
+    {
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 450px) 
+{
+
+    .cards-div
+    {
+        padding: 15px 15px;
+    }
+
+    .card
+    {
+        width: 100%;
+    }
+
+    .div2
+    {
+        left: 130px;
+    } 
+    
+    .menu-list
+    {
+        left: 52px;
+    }
+
+    .drop-down
+    {
+        width: 25.5%;
+    }
+
+    .location-div
+    {
+        width: 60%;
+    }
+
+    #all-categories
+    {
+        width: 40%;
+        font-size:  14px;
+    }
+
+    #categories-heading
+    {
+        font-size: 20px;
+    }
+
+    #categories-heading span
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 390px) 
+{
+    .div1
+    {
+        width: 20%;
+    }   
+    
+    .title-heading
+    {
+        font-size: 12px;
+    }
+
+    .div2
+    {
+        left: 80px;
+    }
+
+    .menu-list
+    {
+        left: 0px;
+    }
+
+    .div3
+    {
+        width: 40%;
+    }
+    .drop-down
+    {
+        width: 35%;
+    }
+
+    .location-div
+    {
+        width: 70%;
+    }
+
+    #all-categories
+    {
+        width: 60%;
+    }
+}
+
+
+/* Overriding bootsrap */
+p
+{
+    margin-bottom: 0;
+}
+
+h3
+{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+.carousel-control-prev-icon
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+.carousel-indicators [data-bs-target]
+{
+    background-color: black;
+}
